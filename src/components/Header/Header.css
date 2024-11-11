@@ -1,0 +1,45 @@
+
+.header {
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background: #1E90FF; /* Primary color */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+}
+
+.header-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.header-tabs {
+  display: flex;
+  gap: 30px;
+}
+
+.tab-link {
+  padding: 12px 20px;
+  font-size: 1em;
+  font-weight: 500;
+  color: #ffffff;
+  text-decoration: none;
+  transition: background 0.3s ease, color 0.3s ease;
+  border-radius: 6px;
+}
+
+.tab-link:hover {
+  background: #FFD700; /* Accent color */
+  color: #333333; /* Text color for contrast */
+}
+
+.tab-link.active {
+  background: #ffffff;
+  color: #1E90FF; /* Primary color */
+  font-weight: 600;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
