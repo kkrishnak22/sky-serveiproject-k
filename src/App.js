@@ -20,7 +20,6 @@ import Distance from "./components/Map/Distance";
 import Marker from "./components/Map/Marker";
 import DragMarkerSidebar from "./components/Sidebar/DragMarkerSidebar";
 import Login from "./components/Login/Login";
-import Signup from "./components/Signup/Signup";
 import ProtectedRoute from "./components/Auth/ProtectedRoute";
 import GuestRoute from "./components/Auth/GuestRoute";
 import { AuthProvider, useAuth } from "./components/Auth/AuthContext";
@@ -54,7 +53,7 @@ function App() {
         </ProtectedRoute>
       ),
       children: [
-        { path: "/", element: <Body /> },
+        { path: "/",  element: (<Body />) },
         { path: "/area", element: <Area /> },
         { path: "/distance", element: <Distance /> },
         { path: "/marker", element: <Marker /> },
@@ -70,14 +69,7 @@ function App() {
         </GuestRoute>
       ),
     },
-    {
-      path: "/signup",
-      element: (
-        <GuestRoute>
-          <Signup />
-        </GuestRoute>
-      ),
-    },
+   
   ]);
 
   return (
