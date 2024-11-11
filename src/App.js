@@ -9,7 +9,7 @@ import { ThemeProvider } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 import { CircularProgress, Box } from "@mui/material";
 
-import theme from "./theme/theme"; // Import your custom theme
+import theme from "./theme/theme"; 
 
 import Body from "./components/Body/Body";
 import Header from "./components/Header/Header";
